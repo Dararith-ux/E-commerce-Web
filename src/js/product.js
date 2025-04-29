@@ -47,7 +47,7 @@ let products = [
 cardcontainer.innerHTML = products.map(
   (product) =>
     `<div
-          class="w-full bg-gray-900 border-[5px] border-cyan-600 rounded-[20px] overflow-hidden flex flex-col"
+          class="w-full bg-gray-900 border-[5px] border-cyan-600 rounded-[20px] overflow-hidden flex flex-col transform transition-transform duration-300 hover:scale-103 hover:shadow-[0px_0px_30px_1px_rgba(59,_130,_246,_0.5)]"
         >
           <a
             href="${product.imgLink}"
@@ -60,12 +60,12 @@ cardcontainer.innerHTML = products.map(
           </a>
           <div class="p-[10px] flex flex-col">
             <h2
-              class="text-cyan-400 text-[15px] sm:text-[20px] md:text-[24px] lg:text-2xl text-center font-extrabold"
+              class="text-cyan-400 sm:text-[24px] md:text-[24px] lg:text-2xl text-center font-extrabold text-[20px]"
             >
               ${product.proName}
             </h2>
             <div
-              class="px-[10px] pt-[20px] text-[15px] sm:text-[20px] md:text-[24px] lg:text-2xl flex flex-col gap-[10px]"
+              class="px-[10px] pt-[20px] text-[20px] sm:text-[20px] md:text-[24px] lg:text-2xl flex flex-col gap-[10px]"
             >
               <div>
                 <i class="fa-solid fa-star" style="color: #f1bb27"></i>
@@ -83,7 +83,7 @@ cardcontainer.innerHTML = products.map(
                 </h1>
                 <div>
                   <button
-                    class="bg-green-500 px-[8px] py-[10px] rounded-[10px] text-[20px] cursor-pointer"
+                    class="bg-green-500 px-[8px] py-[10px] rounded-[10px] text-[20px] cursor-pointer border-[5px] border-cyan-400 transform transition-transform duration-500 hover:scale-102 hover:shadow-[0px_0px_30px_1px_rgba(34,_197,_94,_0.5)] "
                   >
                     Add to cart
                   </button>
